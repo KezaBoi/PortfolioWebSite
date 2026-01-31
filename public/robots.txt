@@ -1,0 +1,17 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://anjanau.com/sitemap.xml
+
+# Optimization
+User-agent: *
+Crawl-delay: 1
+
+# Block specific paths (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Host
+Host: https://anjanau.com

@@ -1,0 +1,176 @@
+
+// import project1 from "../assets/projects/1.jpg";
+// import project2 from "../assets/projects/2.jpg";
+import projectPlaceholder from "../assets/project-placeholder.png";
+
+export const PERSONAL_INFO = {
+    name: "John Doe",
+    title: "Software Engineer & Designer",
+    email: "email@example.com",
+    phone: "+1 234 567 890",
+    address: "123 Tech Street, Silicon Valley, CA",
+    resumeLink: "#",
+    social: {
+        github: "https://github.com",
+        linkedin: "https://linkedin.com",
+        twitter: "https://twitter.com",
+    },
+};
+
+export const HERO_CONTENT = {
+    greeting: "Hi, I'm",
+    name: PERSONAL_INFO.name,
+    taglines: [
+        "Software Engineer",
+        "Full Stack Developer",
+        "UI/UX Enthusiast",
+        "Tech Blogger",
+    ],
+    description: `A passionate software engineer with experience in building scalable web applications and designing intuitive user interfaces. Dedicated to writing clean, efficient code and solving complex problems through technology.`,
+    stats: [
+        { value: "5+", label: "Years Exp" },
+        { value: "50+", label: "Projects" },
+        { value: "100%", label: "Commitment" },
+    ],
+};
+
+export const ABOUT_CONTENT = {
+    title: "About Me",
+    description: `I am a dedicated professional with a strong background in computer science and engineering. My journey in technology has been driven by curiosity and a desire to create impact. I specialize in modern web technologies and have a proven track record of delivering high-quality software solutions.`,
+};
+
+export const EXPERIENCE = [
+    {
+        year: "2023 - Present",
+        role: "Senior Software Engineer",
+        company: "Tech Giant Corp",
+        description: "Leading development of scalable cloud-native applications and mentoring junior developers.",
+        technologies: ["React", "Node.js", "AWS"],
+        location: "San Francisco, CA",
+        type: "Full-time",
+    },
+    {
+        year: "2020 - 2023",
+        role: "Full Stack Developer",
+        company: "Innovative Startup",
+        description: "Built and deployed core product features from scratch using modern web technologies.",
+        technologies: ["Python", "Django", "PostgreSQL"],
+        location: "Remote",
+        type: "Full-time",
+    },
+];
+
+export const PROJECTS = [
+    {
+        title: "Project Alpha",
+        image: projectPlaceholder,
+        description: "A comprehensive solution for managing workflows and increasing productivity.",
+        technologies: ["React", "Redux", "Firebase"],
+        link: "https://github.com",
+        type: "Web Application",
+    },
+    {
+        title: "Project Beta",
+        image: projectPlaceholder,
+        description: "An innovative mobile application designed to improve personal health tracking.",
+        technologies: ["Flutter", "Dart", "Firebase"],
+        link: "https://github.com",
+        type: "Mobile App",
+    },
+];
+
+export const EDUCATION = [
+    {
+        year: "2016 - 2020",
+        degree: "BSc in Computer Science",
+        institution: "University of Technology",
+        description: "Graduated with First Class Honors",
+        grade: "GPA: 3.8/4.0",
+    },
+];
+
+export const SERVICES = [
+    {
+        title: "Web Application Development",
+        description: "Building scalable, responsive web applications using modern frameworks.\n- Full Stack Solutions\n- Progressive Web Apps\n- API Development",
+        category: "Development",
+        icon: "Globe",
+        color: "#3b82f6"
+    },
+    {
+        title: "Data Analytics & Validation",
+        description: "Transforming raw data into actionable insights.\n- Business Intelligence Dashboards\n- Data Visualization\n- Automated Reporting",
+        category: "Analytics",
+        icon: "LineChart",
+        color: "#8b5cf6"
+    },
+    {
+        title: "AI & Machine Learning",
+        description: "Integrating intelligent solutions into business processes.\n- Predictive Modeling\n- Natural Language Processing\n- Recommendation Systems",
+        category: "AI/ML",
+        icon: "BrainCircuit",
+        color: "#10b981"
+    },
+    {
+        title: "Cloud Infrastructure",
+        description: "Designing secure and scalable cloud environments.\n- Architecture Design\n- CI/CD Pipelines\n- Serverless Computing",
+        category: "Engineering",
+        icon: "Database",
+        color: "#f59e0b"
+    },
+    {
+        title: "UI/UX Design",
+        description: "Creating intuitive and engaging user experiences.\n- User Interface Design\n- Prototyping & Wireframing\n- User Research",
+        category: "Design",
+        icon: "Presentation",
+        color: "#ec4899"
+    },
+    {
+        title: "Technical Consulting",
+        description: "Expert advice on technology strategy and implementation.\n- System Architecture Reviews\n- Technology Stack Selection\n- Agile Methodologies",
+        category: "Consulting",
+        icon: "TrendingUp",
+        color: "#06b6d4"
+    }
+];
+
+export const TECHNOLOGIES = [
+    // Frontend
+    { icon: "react", label: "React", color: "#61DAFB", category: "Frontend", level: 90 },
+    { icon: "angular", label: "Angular", color: "#DD0031", category: "Frontend", level: 85 },
+    { icon: "streamlit", label: "Streamlit", color: "#FF4B4B", category: "Frontend", level: 95 },
+
+    // Backend
+    { icon: "nodejs", label: "Node.js", color: "#339933", category: "Backend", level: 88 },
+    { icon: "python", label: "Python", color: "#3776AB", category: "Backend", level: 95 },
+    { icon: "fastapi", label: "FastAPI", color: "#009688", category: "Backend", level: 90 },
+
+    // Data & AI
+    { icon: "tensorflow", label: "TensorFlow", color: "#FF6F00", category: "AI/ML", level: 85 },
+    { icon: "pytorch", label: "PyTorch", color: "#EE4C2C", category: "AI/ML", level: 88 },
+    { icon: "pandas", label: "Pandas", color: "#150458", category: "Data", level: 92 },
+    { icon: "openai", label: "OpenAI", color: "#10A37F", category: "GenAI", level: 90 },
+
+    // Cloud & DevOps
+    { icon: "aws", label: "AWS", color: "#FF9900", category: "Cloud", level: 85 },
+    { icon: "docker", label: "Docker", color: "#2496ED", category: "DevOps", level: 90 },
+    { icon: "kubernetes", label: "Kubernetes", color: "#326CE5", category: "DevOps", level: 80 },
+    { icon: "linux", label: "Linux", color: "#FCC624", category: "OS", level: 95 },
+];
+
+export const ARTICLES = [
+    {
+        title: "The Future of Web Development",
+        publication: "Tech Insight",
+        date: "2024",
+        description: "Exploring emerging trends in frontend architecture.",
+        link: "https://medium.com",
+        tags: ["Web", "Technology"],
+    },
+];
+
+export const CONTACT_MESSAGE = {
+    title: "Get in Touch",
+    message: "I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
+    email: PERSONAL_INFO.email,
+};
