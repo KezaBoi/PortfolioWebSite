@@ -2,18 +2,19 @@
 // import project1 from "../assets/projects/1.jpg";
 // import project2 from "../assets/projects/2.jpg";
 import projectPlaceholder from "../assets/project-placeholder.png";
+import { Store, CalendarCheck, Accessibility, School } from 'lucide-react'
 
 export const PERSONAL_INFO = {
-    name: "John Doe",
-    title: "Software Engineer & Designer",
-    email: "email@example.com",
-    phone: "+1 234 567 890",
-    address: "123 Tech Street, Silicon Valley, CA",
+    name: "Kiran Thomlinson",
+    title: "Software Engineer Student",
+    email: "kiranthomlinson@icloud.com",
+    phone: "(+61) 433 607 555",
+    address: "Brisbane, Qld, Australia",
     resumeLink: "#",
     social: {
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
+        github: "https://github.com/KezaBoi",
+        // linkedin: "https://linkedin.com",
+        // twitter: "https://twitter.com",
     },
 };
 
@@ -24,12 +25,11 @@ export const HERO_CONTENT = {
         "Software Engineer",
         "Full Stack Developer",
         "UI/UX Enthusiast",
-        "Tech Blogger",
     ],
     description: `A passionate software engineer with experience in building scalable web applications and designing intuitive user interfaces. Dedicated to writing clean, efficient code and solving complex problems through technology.`,
     stats: [
-        { value: "5+", label: "Years Exp" },
-        { value: "50+", label: "Projects" },
+        { value: "2+", label: "Years Exp" },
+        { value: "5+", label: "Projects" },
         { value: "100%", label: "Commitment" },
     ],
 };
@@ -42,21 +42,53 @@ export const ABOUT_CONTENT = {
 export const EXPERIENCE = [
     {
         year: "2023 - Present",
-        role: "Senior Software Engineer",
-        company: "Tech Giant Corp",
+        role: "Senior Educator",
+        company: "Payne Road State School OSHC",
         description: "Leading development of scalable cloud-native applications and mentoring junior developers.",
-        technologies: ["React", "Node.js", "AWS"],
-        location: "San Francisco, CA",
-        type: "Full-time",
+        technologies: [],
+        location: "The Gap, QLD",
+        icon: School,
+        type: "Casual",
     },
     {
-        year: "2020 - 2023",
-        role: "Full Stack Developer",
-        company: "Innovative Startup",
+        year: "2023 - 2025",
+        role: "Disability Support",
+        company: "Connect Coordination QLD",
+        description: "Leading development of scalable cloud-native applications and mentoring junior developers.",
+        technologies: [],
+        location: "Brisbane, QLD",
+        icon: Accessibility,
+        type: "Casual",
+    },
+    {
+        year: "2023 - 2023",
+        role: "Event Coordinator",
+        company: "Connect Coordination QLD",
+        description: "Leading development of scalable cloud-native applications and mentoring junior developers.",
+        technologies: [],
+        location: "Brisbane, QLD",
+        icon: CalendarCheck,
+        type: "Casual",
+    },
+    {
+        year: "2022 - 2024",
+        role: "Department Supervisor",
+        company: "Harris Farm Markets",
+        description: "Leading development of scalable cloud-native applications and mentoring junior developers.",
+        technologies: [],
+        location: "West End, QLD",
+        icon: Store,
+        type: "Casual",
+    },
+    {
+        year: "2021 - 2022",
+        role: "Store Attendant",
+        company: "Harris Farm Markets",
         description: "Built and deployed core product features from scratch using modern web technologies.",
-        technologies: ["Python", "Django", "PostgreSQL"],
-        location: "Remote",
-        type: "Full-time",
+        technologies: [],
+        location: "West End, QLD",
+        icon: Store,
+        type: "Casual",
     },
 ];
 
@@ -81,11 +113,22 @@ export const PROJECTS = [
 
 export const EDUCATION = [
     {
-        year: "2016 - 2020",
-        degree: "BSc in Computer Science",
-        institution: "University of Technology",
-        description: "Graduated with First Class Honors",
-        grade: "GPA: 3.8/4.0",
+        year: "2025 - Present",
+        degree: "Bachelor of Engineering - Computer and Software Systems",
+        institution: "Queensland University of Technology",
+        description: "Executive Deans' Commendation for Academic Excellence (Semester 2 2025)",
+        location: "Brisbane",
+        modules: ["Microprocessors and Digital Systems", "Web Computing", "Cyber Security", "Signal Analysis"],
+        grade: "GPA: 6.7/7.0",
+    },
+    {
+        year: "2024 - 2025",
+        degree: "Diploma in Engineering",
+        institution: "Queensland University of Technology",
+        description: "Completed after semester 1 2025",
+        location: "Brisbane",
+        modules: ["Foundations of Electrical Engineering", "Computing and Data for Engineers", "Engineering Mechanics"],
+        grade: "GPA: 6.6/7.0",
     },
 ];
 
@@ -136,26 +179,26 @@ export const SERVICES = [
 
 export const TECHNOLOGIES = [
     // Frontend
-    { icon: "react", label: "React", color: "#61DAFB", category: "Frontend", level: 90 },
-    { icon: "angular", label: "Angular", color: "#DD0031", category: "Frontend", level: 85 },
-    { icon: "streamlit", label: "Streamlit", color: "#FF4B4B", category: "Frontend", level: 95 },
+    { icon: "react", label: "React", color: "#61DAFB", category: "Frontend", level: 40 },
+    // { icon: "angular", label: "Angular", color: "#DD0031", category: "Frontend", level: 85 },
+    // { icon: "streamlit", label: "Streamlit", color: "#FF4B4B", category: "Frontend", level: 95 },
 
     // Backend
-    { icon: "nodejs", label: "Node.js", color: "#339933", category: "Backend", level: 88 },
-    { icon: "python", label: "Python", color: "#3776AB", category: "Backend", level: 95 },
-    { icon: "fastapi", label: "FastAPI", color: "#009688", category: "Backend", level: 90 },
+    { icon: "nodejs", label: "Node.js", color: "#339933", category: "Backend", level: 40 },
+    { icon: "python", label: "Python", color: "#3776AB", category: "Backend", level: 25 },
+    // { icon: "fastapi", label: "FastAPI", color: "#009688", category: "Backend", level: 90 },
 
     // Data & AI
-    { icon: "tensorflow", label: "TensorFlow", color: "#FF6F00", category: "AI/ML", level: 85 },
-    { icon: "pytorch", label: "PyTorch", color: "#EE4C2C", category: "AI/ML", level: 88 },
-    { icon: "pandas", label: "Pandas", color: "#150458", category: "Data", level: 92 },
-    { icon: "openai", label: "OpenAI", color: "#10A37F", category: "GenAI", level: 90 },
+    // { icon: "tensorflow", label: "TensorFlow", color: "#FF6F00", category: "AI/ML", level: 85 },
+    // { icon: "pytorch", label: "PyTorch", color: "#EE4C2C", category: "AI/ML", level: 88 },
+    { icon: "pandas", label: "Pandas", color: "#150458", category: "Data", level: 25 },
+    // { icon: "openai", label: "OpenAI", color: "#10A37F", category: "GenAI", level: 90 },
 
     // Cloud & DevOps
-    { icon: "aws", label: "AWS", color: "#FF9900", category: "Cloud", level: 85 },
-    { icon: "docker", label: "Docker", color: "#2496ED", category: "DevOps", level: 90 },
-    { icon: "kubernetes", label: "Kubernetes", color: "#326CE5", category: "DevOps", level: 80 },
-    { icon: "linux", label: "Linux", color: "#FCC624", category: "OS", level: 95 },
+    // { icon: "aws", label: "AWS", color: "#FF9900", category: "Cloud", level: 85 },
+    // { icon: "docker", label: "Docker", color: "#2496ED", category: "DevOps", level: 90 },
+    // { icon: "kubernetes", label: "Kubernetes", color: "#326CE5", category: "DevOps", level: 80 },
+    // { icon: "linux", label: "Linux", color: "#FCC624", category: "OS", level: 95 },
 ];
 
 export const ARTICLES = [

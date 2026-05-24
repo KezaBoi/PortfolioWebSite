@@ -170,7 +170,7 @@ const Hero = () => {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
                 </span>
-                <span className="text-[10px] font-mono font-bold text-cyan-400 tracking-wider">SYSTEM ONLINE: TRADING ALGORITHMS ACTIVE</span>
+                <span className="text-[10px] font-mono font-bold text-cyan-400 tracking-wider">SYSTEM ONLINE: WELCOME TO MY PORTFOLIO</span>
               </div>
               <Typewriter phrases={HERO_CONTENT.taglines} />
             </motion.div>

@@ -140,12 +140,12 @@ const AppContent = () => {
   // Professional page ordering - following industry best practices
   const sections = [
     { id: 'hero', label: 'Home', icon: '🏠', path: '/', priority: 'high' },
-    { id: 'experience', label: 'Experience', icon: '💼', path: '/experience', priority: 'high' },
-    { id: 'technologies', label: 'Skills', icon: '⚡', path: '/skills', priority: 'high' },
     { id: 'projects', label: 'Projects', icon: '🎯', path: '/projects', priority: 'high' },
     { id: 'education', label: 'Education', icon: '🎓', path: '/education', priority: 'medium' },
-    { id: 'services', label: 'Services', icon: '🚀', path: '/services', priority: 'medium' },
-    { id: 'blog', label: 'Blog', icon: '📝', path: '/blog', priority: 'low' },
+    { id: 'experience', label: 'Experience', icon: '💼', path: '/experience', priority: 'high' },
+    { id: 'technologies', label: 'Skills', icon: '⚡', path: '/skills', priority: 'high' },
+    // { id: 'services', label: 'Services', icon: '🚀', path: '/services', priority: 'medium' },
+    // { id: 'blog', label: 'Blog', icon: '📝', path: '/blog', priority: 'low' },
     { id: 'contact', label: 'Contact', icon: '📧', path: '/contact', priority: 'high' }
   ]
 
@@ -156,8 +156,8 @@ const AppContent = () => {
     '/skills': 'technologies',
     '/projects': 'projects',
     '/education': 'education',
-    '/services': 'services',
-    '/blog': 'blog',
+    // '/services': 'services',
+    // '/blog': 'blog',
     '/contact': 'contact'
   }
 
@@ -173,7 +173,7 @@ const AppContent = () => {
     // Simulate initial loading
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 1500)
+    }, 1000)
 
     return () => {
       window.removeEventListener('resize', checkMobile)

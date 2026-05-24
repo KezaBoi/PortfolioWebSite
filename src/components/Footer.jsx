@@ -25,6 +25,12 @@ const Footer = () => {
             <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
             <span className="tracking-wider">SYSTEM ONLINE</span>
           </div>
+          <span className="hidden sm:inline text-gray-700">|</span>
+          <div className="text-gray-500 hover:text-cyan-400 transition-colors">
+            <a href={'https://github.com/Anju982/PortfolioWebSite'} target='_blank'>
+              <span className="tracking-wider" >UI CREDIT: Anjana Urulugastenna</span>
+            </a>
+          </div>
         </div>
 
         {/* Right: Connect */}

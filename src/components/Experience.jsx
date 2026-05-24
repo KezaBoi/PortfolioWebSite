@@ -3,14 +3,14 @@ import { motion, useInView } from "framer-motion";
 import {
   Briefcase, Calendar, MapPin, TrendingUp,
   Code2, Database, PieChart, ArrowUpRight,
-  Terminal, Activity
+  Terminal, Activity, Store
 } from "lucide-react";
 import { EXPERIENCE } from "../data/portfolio";
 
 // --- 1. Data Definition ---
 const EXPERIENCES = EXPERIENCE.map((exp, index) => ({
   ...exp,
-  icon: [Code2, TrendingUp, Database, PieChart][index % 4],
+  // icon: Store,
   color: ["#3b82f6", "#8b5cf6", "#10b981", "#f59e0b"][index % 4]
 }));
 
@@ -201,14 +201,13 @@ const ExperienceSection = () => {
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Professional{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
-              Experience
+              Professional Experience
             </span>
           </h2>
 
           <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-            A timeline of professional career.
+            A timeline of my professional career.
           </p>
         </motion.div>
 

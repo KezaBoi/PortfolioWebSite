@@ -228,7 +228,7 @@ const Projects = () => {
         <div className={`mt-24 text-center transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className="inline-block p-[1px] rounded-full bg-gradient-to-r from-blue-500/50 to-purple-500/50">
             <a
-              href="https://github.com"
+              href="https://github.com/KezaBoi"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-[#0a0a0a] rounded-full text-white hover:bg-[#1a1a1a] transition-all duration-300 group"

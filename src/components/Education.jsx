@@ -7,23 +7,16 @@ import { EDUCATION } from "../data/portfolio";
 // --- Data Definition (Embedded to prevent import errors) ---
 const EDUCATION_DATA = EDUCATION.map((edu, index) => ({
   ...edu,
-  modules: ["Module 1", "Module 2", "Module 3"],
   type: "Degree",
   icon: index === 0 ? "master" : "bachelor"
 }));
 
 const CERTIFICATIONS_DATA = [
   {
-    title: "Professional Certificate",
-    issuer: "Tech Provider",
-    year: "2024",
-    type: "Tech"
-  },
-  {
-    title: "Advanced Certification",
-    issuer: "Online Platform",
+    title: "Community Services",
+    issuer: "Strategix",
     year: "2023",
-    type: "Skill"
+    type: "Cert 3"
   }
 ];
 
@@ -147,10 +140,10 @@ const EducationSection = () => {
 
               {/* Result Badge */}
               <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md">
-                <div className="text-[10px] text-gray-400 font-mono mr-1">RESULT</div>
+                <div className="text-[10px] text-gray-400 font-mono mr-1">GPA</div>
                 <Award className="w-3 h-3 text-yellow-400" />
                 <span className="text-xs font-bold text-white tracking-wide">
-                  {edu.grade.includes("GPA") ? "First Class" : edu.grade}
+                  {edu.grade.includes("GPA") ? edu.grade.split(' ')[1] : "First Class" }
                 </span>
               </div>
             </div>
@@ -193,6 +186,7 @@ const EducationSection = () => {
               <span>Core Modules</span>
             </div>
             <div className="flex flex-wrap gap-2">
+              
               {edu.modules.map((mod, idx) => (
                 <span
                   key={idx}
