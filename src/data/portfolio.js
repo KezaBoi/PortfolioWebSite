@@ -94,11 +94,11 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
     {
-        title: "Project Alpha",
+        title: "Rental Search App",
         image: projectPlaceholder,
         description: "A comprehensive solution for managing workflows and increasing productivity.",
-        technologies: ["React", "Redux", "Firebase"],
-        link: "https://github.com",
+        technologies: ["React", "Vite", "Knex"],
+        link: "https://rentalapp-portfolio.onrender.com",
         type: "Web Application",
     },
     {

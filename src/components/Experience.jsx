@@ -231,7 +231,7 @@ const ExperienceSection = () => {
         </motion.div>
 
         {/* Footer CTA */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 0.8 }}
@@ -241,7 +241,7 @@ const ExperienceSection = () => {
             <Activity size={14} className="text-green-500" />
             <span>TOTAL EXPERIENCE: 5+ YEARS</span>
           </div>
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </section>
