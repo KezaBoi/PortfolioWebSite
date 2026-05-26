@@ -110,6 +110,7 @@ const BackgroundEffects = () => {
   }, []);
 
   // Floating Symbols (Finance & Tech mixed)
+  // const symbols = ['C', 'JS', 'C#', 'JSX', 'PY', '⚡', '☁️', '🛡️'];
   const symbols = ['$', '₿', 'AI', '∫', '∑', '⚡', '☁️', '🛡️'];
 
   return (
@@ -191,7 +192,9 @@ const TechnologiesSection = () => {
   };
 
   // --- Data Definition (Updated) ---
-  const technologies = useMemo(() => TECHNOLOGIES, []);
+  const technologies = useMemo(() => {
+    return [...TECHNOLOGIES].sort((a, b) => b.level - a.level);
+  }, []);
 
   const categories = useMemo(() => ["All", ...new Set(technologies.map(t => t.category))], [technologies]);
 
@@ -266,7 +269,15 @@ const TechnologiesSection = () => {
               <div className="flex flex-col items-center relative z-10">
                 {/* Icon */}
                 <div className="mb-6 p-4 rounded-full bg-white/5 ring-1 ring-white/10 group-hover:bg-white/10 transition-all duration-300">
-                  <TechIcon type={tech.icon} color={tech.color} />
+                  <div
+                    className="text-5xl md:text-6xl transition-all duration-300 transform group-hover:scale-110 group-hover:-translate-y-2"
+                    style={{
+                      filter: `drop-shadow(0 0 15px ${tech.color}50)`,
+                      textShadow: `0 0 20px ${tech.color}30`
+                    }}
+                  >
+                    <tech.icon color={tech.color}/>
+                  </div>
                 </div>
 
                 {/* Info */}

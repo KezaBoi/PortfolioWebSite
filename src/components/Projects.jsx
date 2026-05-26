@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FolderGit2, ExternalLink, Code2, Github, ArrowUpRight, Terminal } from "lucide-react";
 import { PROJECTS } from "../constants";
 
+
 // --- 1. Shared Background (Matches Tech & Experience) ---
 const BackgroundEffects = () => {
   const [particles, setParticles] = useState([]);
@@ -78,6 +79,8 @@ const getProjectTheme = (title) => {
     return { color: "#3b82f6", icon: "💻", type: "FULL STACK" };
   if (title.includes("API") || title.includes("Backend") || title.includes("Scrape"))
     return { color: "#f59e0b", icon: "⚙️", type: "SYSTEM" };
+  if (title.includes("CLI"))
+    return { color: "#f59e0b", icon: ">_", type: "Command Line" };
   return { color: "#6366f1", icon: "🚀", type: "PROJECT" };
 };
 
@@ -105,7 +108,7 @@ const Projects = () => {
         <div
           className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
           style={{
-            background: `radial-gradient(circle at 50% 0%, ${theme.color}15, transparent 70%)`
+            background: `radial-gradient(circle at 50% 0%, ${project.color}15, transparent 70%)`
           }}
         />
 
@@ -115,12 +118,12 @@ const Projects = () => {
             <div
               className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl shadow-lg transition-transform duration-300 group-hover:scale-110"
               style={{
-                backgroundColor: `${theme.color}10`,
-                border: `1px solid ${theme.color}30`,
-                boxShadow: `0 0 20px ${theme.color}20`
+                backgroundColor: `${project.color}10`,
+                border: `1px solid ${project.color}30`,
+                boxShadow: `0 0 20px ${project.color}20`
               }}
             >
-              {theme.icon}
+              <project.icon color={project.color}/>
             </div>
 
             <div className="flex flex-col items-end">
@@ -128,12 +131,12 @@ const Projects = () => {
               <span
                 className="text-xs font-bold px-2 py-1 rounded border tracking-wider"
                 style={{
-                  color: theme.color,
-                  borderColor: `${theme.color}30`,
-                  backgroundColor: `${theme.color}10`
+                  color: project.color,
+                  borderColor: `${project.color}30`,
+                  backgroundColor: `${project.color}10`
                 }}
               >
-                {theme.type}
+                {project.type}
               </span>
             </div>
           </div>

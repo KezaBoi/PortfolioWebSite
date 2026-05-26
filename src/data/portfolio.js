@@ -2,7 +2,14 @@
 // import project1 from "../assets/projects/1.jpg";
 // import project2 from "../assets/projects/2.jpg";
 import projectPlaceholder from "../assets/project-placeholder.png";
-import { Store, CalendarCheck, Accessibility, School } from 'lucide-react'
+import { Store, CalendarCheck, Accessibility, School, Terminal, CircuitBoard, Laptop } from 'lucide-react'
+import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
+import { SiKnexdotjs, SiPandas, SiPlatformio } from 'react-icons/si';
+import { IoLogoJavascript } from "react-icons/io5";
+import { GrMysql } from "react-icons/gr";
+import { TbMathMaxMin } from "react-icons/tb";
+import { PiFileCSharp, PiFileC, PiCircuitry } from "react-icons/pi";
+import { FaMicrochip } from "react-icons/fa6";
 
 export const PERSONAL_INFO = {
     name: "Kiran Thomlinson",
@@ -96,18 +103,32 @@ export const PROJECTS = [
     {
         title: "Rental Search App",
         image: projectPlaceholder,
-        description: "A comprehensive solution for managing workflows and increasing productivity.",
+        description: "A fullstack web application that allows users to search and filter rental properties across Australia. Users can also create accounts and rate properties, with persistent data utilising MySql. Recieved 90% for the front end development, backend development being marked.",
         technologies: ["React", "Vite", "Knex"],
         link: "https://rentalapp-portfolio.onrender.com",
-        type: "Web Application",
+        type: "Fullstack",
+        icon: Laptop,
+        color: "#3b82f6"
+    },
+    {
+        title: "ATtiny1626 Simon Says",
+        image: projectPlaceholder,
+        description: "A fullstack web application that allows users to search and filter rental properties across Australia. Users can also create accounts and rate properties, with persistent data utilising MySql. Recieved 90% for the front end development, backend development being marked.",
+        technologies: ["React", "Vite", "Knex"],
+        link: "https://rentalapp-portfolio.onrender.com",
+        type: "Embedded System",
+        icon: CircuitBoard,
+        color: "#6366f1"
     },
     {
         title: "CLI Airport Manager",
         image: projectPlaceholder,
-        description: "An innovative mobile application designed to improve personal health tracking.",
+        description: "A simple console application, allowing for the managment of flight creations and bookings by various user types. Implemented using object oriented programming.",
         technologies: ["C#", "OOP"],
-        link: "https://codesandbox.io/p/github/KezaBoi/Command-Line-Airport-App/main?codemirror=0&embed=1&hideexplorer=1&hidenavigation=1&initialpath=terminal&sidebar=0&view=terminal",
+        link: "https://githubbox.com/KezaBoi/Command-Line-Airport-App",
         type: "Console Application",
+        icon: Terminal,
+        color: "#f59e0b"
     },
 ];
 
@@ -130,6 +151,28 @@ export const EDUCATION = [
         modules: ["Foundations of Electrical Engineering", "Computing and Data for Engineers", "Engineering Mechanics"],
         grade: "GPA: 6.6/7.0",
     },
+];
+
+export const TECHNOLOGIES = [
+    // Languages
+    { icon: PiFileCSharp, label: "C#", color: "#512BD4", category: "Languages", level: 75 },
+    { icon: IoLogoJavascript, label: "JavaScript", color: "#F7DF1D", category: "Languages", level: 70 },
+    { icon: PiFileC, label: "C", color: "#004482", category: "Languages", level: 65 },
+    { icon: TbMathMaxMin, label: "MATLAB", color: "#A9290C", category: "Languages", level: 50 },
+    { icon: FaPython, label: "Python", color: "#3776AB", category: "Languages", level: 40 },
+    { icon: GrMysql, label: "SQL", color: "#00758F", category: "Languages", level: 65 },
+    
+    
+    // Web Development
+    { icon: FaReact, label: "React", color: "#58C4DC", category: "Web Development", level: 80 },
+    { icon: FaNodeJs, label: "Node.js", color: "#417E38", category: "Web Development", level: 75 },
+    { icon: SiKnexdotjs, label: "Knex.js", color: "#E16426", category: "Web Development", level: 70 },
+    
+    
+    // Embedded Systems
+    { icon: FaMicrochip, label: "AVR Architecture", color: "#ED1B2D", category: "Embedded Systems", level: 55},
+    { icon: PiCircuitry, label: "Hardware Peripherals", color: "#658c48", category: "Embedded Systems", level: 50},
+    { icon: SiPlatformio, label: "PlatformIO", color: "#FF7F00", category: "Embedded Systems", level: 45},
 ];
 
 export const SERVICES = [
@@ -175,30 +218,6 @@ export const SERVICES = [
         icon: "TrendingUp",
         color: "#06b6d4"
     }
-];
-
-export const TECHNOLOGIES = [
-    // Frontend
-    { icon: "react", label: "React", color: "#61DAFB", category: "Frontend", level: 40 },
-    // { icon: "angular", label: "Angular", color: "#DD0031", category: "Frontend", level: 85 },
-    // { icon: "streamlit", label: "Streamlit", color: "#FF4B4B", category: "Frontend", level: 95 },
-
-    // Backend
-    { icon: "nodejs", label: "Node.js", color: "#339933", category: "Backend", level: 40 },
-    { icon: "python", label: "Python", color: "#3776AB", category: "Backend", level: 25 },
-    // { icon: "fastapi", label: "FastAPI", color: "#009688", category: "Backend", level: 90 },
-
-    // Data & AI
-    // { icon: "tensorflow", label: "TensorFlow", color: "#FF6F00", category: "AI/ML", level: 85 },
-    // { icon: "pytorch", label: "PyTorch", color: "#EE4C2C", category: "AI/ML", level: 88 },
-    { icon: "pandas", label: "Pandas", color: "#150458", category: "Data", level: 25 },
-    // { icon: "openai", label: "OpenAI", color: "#10A37F", category: "GenAI", level: 90 },
-
-    // Cloud & DevOps
-    // { icon: "aws", label: "AWS", color: "#FF9900", category: "Cloud", level: 85 },
-    // { icon: "docker", label: "Docker", color: "#2496ED", category: "DevOps", level: 90 },
-    // { icon: "kubernetes", label: "Kubernetes", color: "#326CE5", category: "DevOps", level: 80 },
-    // { icon: "linux", label: "Linux", color: "#FCC624", category: "OS", level: 95 },
 ];
 
 export const ARTICLES = [

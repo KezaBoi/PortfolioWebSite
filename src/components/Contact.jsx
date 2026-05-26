@@ -130,15 +130,15 @@ const Contact = () => {
       link: `tel:${CONTACT.phoneNo}`,
       desc: "Voice communication line"
     },
-    {
-      id: "C-03",
-      title: "HQ Location",
-      value: "Colombo, Sri Lanka", // Simplified from address for card
-      icon: MapPin,
-      color: "#8b5cf6", // Purple
-      link: null,
-      desc: "Geospatial coordinates"
-    }
+    // {
+    //   id: "C-03",
+    //   title: "HQ Location",
+    //   value: "Colombo, Sri Lanka", // Simplified from address for card
+    //   icon: MapPin,
+    //   color: "#8b5cf6", // Purple
+    //   link: null,
+    //   desc: "Geospatial coordinates"
+    // }
   ];
 
   return (
@@ -167,7 +167,7 @@ const Contact = () => {
         </div>
 
         {/* --- Contact Channels (Cards) --- */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {contactMethods.map((method, index) => {
             const Icon = method.icon;
             return (
@@ -212,121 +212,12 @@ const Contact = () => {
           })}
         </div>
 
-        {/* --- Terminal Form --- */}
-        <div className={`max-w-4xl mx-auto transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="relative rounded-2xl bg-[#0a0a0a] border border-white/10 overflow-hidden backdrop-blur-xl">
-            {/* Terminal Header */}
-            <div className="flex items-center justify-between px-6 py-3 bg-white/5 border-b border-white/5">
-              <div className="flex items-center gap-2">
-                <Terminal size={14} className="text-blue-400" />
-                <span className="text-xs font-mono text-gray-400">root@portfolio:~/contact-form</span>
-              </div>
-              <div className="flex gap-1.5">
-                <div className="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/50" />
-                <div className="w-3 h-3 rounded-full bg-yellow-500/20 border border-yellow-500/50" />
-                <div className="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/50" />
-              </div>
-            </div>
-
-            <div className="p-8 md:p-10">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-xs font-mono text-blue-400 ml-1">_INPUT_NAME</label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-[#111] border border-white/10 rounded-lg focus:outline-none focus:border-blue-500 text-white placeholder-gray-600 font-mono text-sm transition-all"
-                      placeholder="ENTER_NAME"
-                      required
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-xs font-mono text-green-400 ml-1">_INPUT_EMAIL</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-[#111] border border-white/10 rounded-lg focus:outline-none focus:border-green-500 text-white placeholder-gray-600 font-mono text-sm transition-all"
-                      placeholder="ENTER_EMAIL"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-xs font-mono text-purple-400 ml-1">_SUBJECT_LINE</label>
-                  <input
-                    type="text"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-[#111] border border-white/10 rounded-lg focus:outline-none focus:border-purple-500 text-white placeholder-gray-600 font-mono text-sm transition-all"
-                    placeholder="ENTER_SUBJECT"
-                    required
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-xs font-mono text-yellow-400 ml-1">_MESSAGE_BODY</label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    rows="5"
-                    className="w-full px-4 py-3 bg-[#111] border border-white/10 rounded-lg focus:outline-none focus:border-yellow-500 text-white placeholder-gray-600 font-mono text-sm transition-all resize-none"
-                    placeholder="WRITE_TRANSMISSION..."
-                    required
-                  />
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-white/5 mt-6">
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className={`flex-1 flex items-center justify-center gap-3 px-8 py-4 rounded-lg font-mono font-bold text-sm tracking-wider transition-all duration-300 ${isSubmitting
-                        ? 'bg-blue-600/50 cursor-wait'
-                        : 'bg-blue-600 hover:bg-blue-500 text-white shadow-lg hover:shadow-blue-500/25'
-                      }`}
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <Wifi className="w-4 h-4 animate-ping" />
-                        TRANSMITTING...
-                      </>
-                    ) : (
-                      <>
-                        <Send className="w-4 h-4" />
-                        SEND_TRANSMISSION
-                      </>
-                    )}
-                  </button>
-
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-3 px-8 py-4 rounded-lg border border-white/10 hover:bg-white/5 text-gray-300 hover:text-white font-mono text-sm font-bold tracking-wider transition-all duration-300"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <Calendar className="w-4 h-4" />
-                    SCHEDULE_UPLINK
-                  </a>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
         {/* --- Social Network Nodes --- */}
         <div className={`flex justify-center gap-6 mt-16 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           {[
-            { icon: Github, href: "https://github.com", color: "#fff" },
-            { icon: Linkedin, href: "https://linkedin.com", color: "#0077b5" },
-            { icon: Globe, href: "https://medium.com", color: "#10b981" }
+            { icon: Github, href: "https://github.com/KezaBoi", color: "#fff" },
+            // { icon: Linkedin, href: "https://linkedin.com", color: "#0077b5" },
+            // { icon: Globe, href: "https://medium.com", color: "#10b981" }
           ].map((social, i) => {
             const Icon = social.icon;
             return (
@@ -346,7 +237,7 @@ const Contact = () => {
         </div>
 
         <div className="text-center mt-8 text-xs font-mono text-gray-600">
-          <p>EST. 2024 • SECURE CONNECTION ESTABLISHED</p>
+          <p>EST. 2026 • SECURE CONNECTION ESTABLISHED</p>
         </div>
 
       </div>

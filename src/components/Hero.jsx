@@ -224,7 +224,7 @@ const Hero = () => {
             </motion.div>
 
             {/* Stats Grid */}
-            <motion.div
+            {/* <motion.div
               variants={itemVariants}
               className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-6"
             >
@@ -242,7 +242,7 @@ const Hero = () => {
                   </div>
                 );
               })}
-            </motion.div>
+            </motion.div> */}
 
             {/* Social Links */}
             <motion.div variants={itemVariants} className="flex gap-6 pt-4">
