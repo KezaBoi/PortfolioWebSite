@@ -103,7 +103,7 @@ export const PROJECTS = [
     {
         title: "Rental Search App",
         image: projectPlaceholder,
-        description: "A fullstack web application that allows users to search and filter rental properties across Australia. Users can also create accounts and rate properties, with persistent data utilising MySql. Recieved 90% for the front end development, backend development being marked.",
+        description: "A fullstack web application that allows users to search and filter rental properties across Australia. Users can also create accounts and rate properties, with persistent data utilising MySql. Awarded 90% for front end development, backend development being marked.",
         technologies: ["React", "Vite", "Knex"],
         link: "https://rentalapp-portfolio.onrender.com",
         type: "Fullstack",
@@ -113,9 +113,9 @@ export const PROJECTS = [
     {
         title: "ATtiny1626 Simon Says",
         image: projectPlaceholder,
-        description: "A fullstack web application that allows users to search and filter rental properties across Australia. Users can also create accounts and rate properties, with persistent data utilising MySql. Recieved 90% for the front end development, backend development being marked.",
+        description: "An embedded systems project featuring a hardware-based memory game built using the ATtiny1626 microcontroller. Demonstrates microchip programming, low-level electronics integration, and real-time state management. Awarded 94%.",
         technologies: ["React", "Vite", "Knex"],
-        link: "https://rentalapp-portfolio.onrender.com",
+        link: "https://attiny1626-simon-says.vercel.app/",
         type: "Embedded System",
         icon: CircuitBoard,
         color: "#6366f1"
@@ -123,9 +123,9 @@ export const PROJECTS = [
     {
         title: "CLI Airport Manager",
         image: projectPlaceholder,
-        description: "A simple console application, allowing for the managment of flight creations and bookings by various user types. Implemented using object oriented programming.",
+        description: "A simple console application, allowing for the managment of flight creations and bookings by various user types. Implemented using object oriented programming. Awarded 99%.",
         technologies: ["C#", "OOP"],
-        link: "https://githubbox.com/KezaBoi/Command-Line-Airport-App",
+        link: "https://airport-app-one.vercel.app/",
         type: "Console Application",
         icon: Terminal,
         color: "#f59e0b"

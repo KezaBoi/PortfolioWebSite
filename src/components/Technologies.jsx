@@ -30,7 +30,6 @@ const TechIcon = ({ type, color }) => {
     cloudflare: "🛡️", // Cloudflare
     docker: "🐳",
     kubernetes: "☸️",
-    linux: "💻",
 
     // OS & Systems
     linux: "💻",
