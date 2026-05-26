@@ -102,12 +102,12 @@ export const PROJECTS = [
         type: "Web Application",
     },
     {
-        title: "Project Beta",
+        title: "CLI Airport Manager",
         image: projectPlaceholder,
         description: "An innovative mobile application designed to improve personal health tracking.",
-        technologies: ["Flutter", "Dart", "Firebase"],
-        link: "https://github.com",
-        type: "Mobile App",
+        technologies: ["C#", "OOP"],
+        link: "https://codesandbox.io/p/github/KezaBoi/Command-Line-Airport-App/main?codemirror=0&embed=1&hideexplorer=1&hidenavigation=1&initialpath=terminal&sidebar=0&view=terminal",
+        type: "Console Application",
     },
 ];
 
