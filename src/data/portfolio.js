@@ -15,7 +15,7 @@ export const PERSONAL_INFO = {
     name: "Kiran Thomlinson",
     title: "Software Engineer Student",
     email: "kiranthomlinson@icloud.com",
-    phone: "(+61) 433 607 555",
+    phone: "(+61) 402 688 562",
     address: "Brisbane, Qld, Australia",
     resumeLink: "#",
     social: {
