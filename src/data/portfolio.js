@@ -103,7 +103,7 @@ export const PROJECTS = [
     {
         title: "Rental Search App",
         image: projectPlaceholder,
-        description: "A fullstack web application that allows users to search and filter rental properties across Australia. Users can also create accounts and rate properties, with persistent data utilising MySql. Awarded 90% for front end development, backend development being marked.",
+        description: "A fullstack web application that allows users to search and filter rental properties across Australia. Users can also create accounts and rate properties, with persistent data utilising MySQL. Awarded 90% for front end development, backend development being marked.",
         technologies: ["React", "Vite", "Knex"],
         link: "https://rentalapp-portfolio.onrender.com",
         type: "Fullstack",
@@ -114,7 +114,7 @@ export const PROJECTS = [
         title: "ATtiny1626 Simon Says",
         image: projectPlaceholder,
         description: "An embedded systems project featuring a hardware-based memory game built using the ATtiny1626 microcontroller. Demonstrates microchip programming, low-level electronics integration, and real-time state management. Awarded 94%.",
-        technologies: ["React", "Vite", "Knex"],
+        technologies: ["C", "ATtiny1626", "PlatformIO"],
         link: "https://attiny1626-simon-says.vercel.app/",
         type: "Embedded System",
         icon: CircuitBoard,
