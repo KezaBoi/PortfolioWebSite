@@ -225,8 +225,8 @@ const TechnologiesSection = () => {
           </h2>
 
           <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-            A comprehensive arsenal of tools specializing in <span className="text-blue-400">Quantitative Finance</span>,
-            <span className="text-purple-400"> Generative AI</span>, and secure <span className="text-green-400">Cloud Infrastructure</span>.
+            A comprehensive arsenal of tools specializing in <span className="text-blue-400">Web Development</span>,
+            <span className="text-purple-400"> Embedded Systems</span>, and secure <span className="text-green-400">Cloud Infrastructure</span>.
           </p>
         </div>
 

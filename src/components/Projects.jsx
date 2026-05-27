@@ -215,8 +215,7 @@ const Projects = () => {
           </h2>
 
           <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-            Deploying algorithmic trading strategies, AI-driven financial models, and scalable
-            full-stack architectures.
+            Experience with a range of mediums, from embedded systems to fullstack web applications.
           </p>
         </div>
 
